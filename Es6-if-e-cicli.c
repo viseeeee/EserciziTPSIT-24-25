@@ -7,7 +7,7 @@ quando il valore letto è al di fuori dell’intervallo [A, B];
 #include <stdio.h>
 void main()
 {
-    int a, b, somma = 0, valoriInseriti = 0;
+    int a, b, c, somma = 0, valoriInseriti = 0;
     double media;
     do
     {
@@ -16,9 +16,15 @@ void main()
 
         printf("Inserisci il valore del secondo numero\n");
         scanf("%d", &b);
-        valoriInseriti=valoriInseriti+2;
-        somma = somma + a + b;
     } while (a > b);
+    do
+    {
+        printf("Inserisci il valore \n");
+        scanf("%d", &c);
+        valoriInseriti++;
+        somma = somma + c;
+    } while (c >= a && c <= b);
+
     media = (double)somma / (double)valoriInseriti;
-    printf("La media di tutti i numeri inseriti è:%.2f\n",media);
+    printf("La media di tutti i numeri inseriti è:%.2f\n", media);
 }
