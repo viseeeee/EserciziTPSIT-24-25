@@ -11,7 +11,7 @@ int main(int argc, char **argv)
         exit(-1);
     }
 
-    printf("viva la fica\n");
+    printf("metti la stringa\n");
     int numero = atoi(argv[1]);
     printf("%d", numero);
     printf("\n");
